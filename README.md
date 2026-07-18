@@ -10,7 +10,8 @@ a single thread of safety orange.
   Instrument Serif for editorial italics, Space Grotesk for technical
   micro-labels, Noto Sans TC for Traditional Chinese accents.
 - **Palette** — porcelain white `#FAFAF7`, ink `#131410`,
-  safety orange `#FF4D00` (used sparingly).
+  stamp blue `#3D78FF` with deep stamp blue `#1D4ED8` for small
+  text (used sparingly).
 - **Motion** — scroll reveals, animated stat counters, kinetic marquee,
   gentle hero parallax. Fully disabled under `prefers-reduced-motion`.
 - **Responsive** — fluid `clamp()` type scale, overlay menu and stacked
