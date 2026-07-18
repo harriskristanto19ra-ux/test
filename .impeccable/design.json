@@ -1,32 +1,68 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-07-18T08:40:00Z",
-  "title": "Design System: SAFELINK — Engineered Connection",
+  "title": "Design System: SAFECHAIN 安全鏈 — Forged Link by Link",
   "extensions": {
     "colorMeta": {
-      "stamp-blue": {
+      "seal-vermilion": {
         "role": "primary",
-        "displayName": "Stamp Blue",
-        "canonical": "#3D78FF",
-        "tonalRamp": ["#0A1A45", "#102A73", "#1638A3", "#1D4ED8", "#3D78FF", "#7AA3FF", "#B3CAFF", "#E3ECFF"]
+        "displayName": "Seal Vermilion",
+        "canonical": "#E8492B",
+        "tonalRamp": [
+          "#3A0E04",
+          "#6B1A08",
+          "#8F250B",
+          "#B0300F",
+          "#E8492B",
+          "#F07A5C",
+          "#F8AF9B",
+          "#FCDDD3"
+        ]
       },
-      "deep-stamp-blue": {
+      "deep-seal-vermilion": {
         "role": "primary",
-        "displayName": "Deep Stamp Blue",
-        "canonical": "#1D4ED8",
-        "tonalRamp": ["#0A1A45", "#102A73", "#1638A3", "#1D4ED8", "#3D78FF", "#7AA3FF", "#B3CAFF", "#E3ECFF"]
+        "displayName": "Deep Seal Vermilion",
+        "canonical": "#B0300F",
+        "tonalRamp": [
+          "#3A0E04",
+          "#6B1A08",
+          "#8F250B",
+          "#B0300F",
+          "#E8492B",
+          "#F07A5C",
+          "#F8AF9B",
+          "#FCDDD3"
+        ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
         "canonical": "#131410",
-        "tonalRamp": ["#131410", "#2B2C27", "#46473F", "#63645B", "#82837A", "#A3A49B", "#C7C7BF", "#EBEBE5"]
+        "tonalRamp": [
+          "#131410",
+          "#2B2C27",
+          "#46473F",
+          "#63645B",
+          "#82837A",
+          "#A3A49B",
+          "#C7C7BF",
+          "#EBEBE5"
+        ]
       },
       "porcelain-white": {
         "role": "neutral",
         "displayName": "Porcelain White",
         "canonical": "#FAFAF7",
-        "tonalRamp": ["#3B3B36", "#5C5C55", "#7E7E75", "#9F9F96", "#C0C0B8", "#DBDBD4", "#EDEDE8", "#FAFAF7"]
+        "tonalRamp": [
+          "#3B3B36",
+          "#5C5C55",
+          "#7E7E75",
+          "#9F9F96",
+          "#C0C0B8",
+          "#DBDBD4",
+          "#EDEDE8",
+          "#FAFAF7"
+        ]
       },
       "raised-porcelain": {
         "role": "neutral",
@@ -40,23 +76,64 @@
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Hero and contact finale only. 6rem hard ceiling." },
-      "headline": { "displayName": "Headline", "purpose": "Section h2s and catalog row names." },
-      "serif-accent": { "displayName": "Serif Accent", "purpose": "One italic counter-signature phrase per fold, never more." },
-      "body": { "displayName": "Body", "purpose": "Prose at Ink Body color, 44–65ch measure." },
-      "label": { "displayName": "Label", "purpose": "Mono micro-labels, catalog codes, spec strips. Data voice only." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero and contact finale only. 6rem hard ceiling."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s and catalog row names."
+      },
+      "serif-accent": {
+        "displayName": "Serif Accent",
+        "purpose": "One italic counter-signature phrase per fold, never more."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose at Ink Body color, 44–65ch measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Mono micro-labels, catalog codes, spec strips. Data voice only."
+      },
+      "zh-display": {
+        "displayName": "中文 Display",
+        "purpose": "Noto Sans TC 900 replaces Archivo for display when lang is zh-Hant; tracking +0.02em, leading 1.18."
+      }
     },
     "shadows": [
-      { "name": "state-lift", "value": "0 4px 8px -4px rgba(19,20,16,0.35)", "purpose": "Hover feedback on solid-filled buttons only; never on hairline-bordered elements." }
+      {
+        "name": "state-lift",
+        "value": "0 4px 8px -4px rgba(19,20,16,0.35)",
+        "purpose": "Hover feedback on solid-filled buttons only; never on hairline-bordered elements."
+      }
     ],
     "motion": [
-      { "name": "ease-out-expo-ish", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Default easing for every transition and reveal." },
-      { "name": "reveal", "value": "0.9s translateY(26px) + fade, stagger 0.12s", "purpose": "Scroll entrance; armed only when html.js is present so no-JS renders stay visible." },
-      { "name": "marquee", "value": "30s linear infinite translateX(-50%)", "purpose": "Kinetic strip between hero and manifesto." }
+      {
+        "name": "ease-out-expo-ish",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Default easing for every transition and reveal."
+      },
+      {
+        "name": "reveal",
+        "value": "0.9s translateY(26px) + fade, stagger 0.12s",
+        "purpose": "Scroll entrance; armed only when html.js is present so no-JS renders stay visible."
+      },
+      {
+        "name": "marquee",
+        "value": "30s linear infinite translateX(-50%)",
+        "purpose": "Kinetic strip between hero and manifesto."
+      }
     ],
     "breakpoints": [
-      { "name": "tablet", "value": "980px" },
-      { "name": "mobile", "value": "620px" }
+      {
+        "name": "tablet",
+        "value": "980px"
+      },
+      {
+        "name": "mobile",
+        "value": "620px"
+      }
     ]
   },
   "components": [
@@ -64,9 +141,9 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Ink pill that certifies the main action; hovers to Deep Stamp Blue with a state lift.",
+      "description": "Ink pill that certifies the main action; hovers to Deep Seal Vermilion with a state lift.",
       "html": "<button class=\"ds-btn-primary\">Explore systems</button>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', monospace; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 28px; border: 1px solid #131410; border-radius: 999px; background: #131410; color: #F4F3EE; cursor: pointer; transition: background 0.3s cubic-bezier(0.22,1,0.36,1), transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s; } .ds-btn-primary:hover { background: #1D4ED8; border-color: #1D4ED8; color: #fff; transform: translateY(-2px); box-shadow: 0 4px 8px -4px rgba(19,20,16,0.35); } .ds-btn-primary:focus-visible { outline: 2px solid #3D78FF; outline-offset: 3px; }"
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 10px; font-family: 'Space Grotesk', monospace; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 28px; border: 1px solid #131410; border-radius: 999px; background: #131410; color: #F4F3EE; cursor: pointer; transition: background 0.3s cubic-bezier(0.22,1,0.36,1), transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s; } .ds-btn-primary:hover { background: #B0300F; border-color: #B0300F; color: #fff; transform: translateY(-2px); box-shadow: 0 4px 8px -4px rgba(19,20,16,0.35); } .ds-btn-primary:focus-visible { outline: 2px solid #E8492B; outline-offset: 3px; }"
     },
     {
       "name": "Ghost Button",
@@ -74,23 +151,23 @@
       "refersTo": "button-ghost",
       "description": "Outlined pill for the secondary path; hovers to full ink inversion.",
       "html": "<button class=\"ds-btn-ghost\">Talk to engineering</button>",
-      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; font-family: 'Space Grotesk', monospace; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 28px; border: 1px solid #131410; border-radius: 999px; background: transparent; color: #131410; cursor: pointer; transition: background 0.3s cubic-bezier(0.22,1,0.36,1), color 0.3s, transform 0.3s; } .ds-btn-ghost:hover { background: #131410; color: #F4F3EE; transform: translateY(-2px); } .ds-btn-ghost:focus-visible { outline: 2px solid #3D78FF; outline-offset: 3px; }"
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; font-family: 'Space Grotesk', monospace; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 16px 28px; border: 1px solid #131410; border-radius: 999px; background: transparent; color: #131410; cursor: pointer; transition: background 0.3s cubic-bezier(0.22,1,0.36,1), color 0.3s, transform 0.3s; } .ds-btn-ghost:hover { background: #131410; color: #F4F3EE; transform: translateY(-2px); } .ds-btn-ghost:focus-visible { outline: 2px solid #E8492B; outline-offset: 3px; }"
     },
     {
       "name": "Text Link",
       "kind": "custom",
       "refersTo": "label",
-      "description": "Mono underlined micro-link; hovers to Deep Stamp Blue.",
+      "description": "Mono underlined micro-link; hovers to Deep Seal Vermilion.",
       "html": "<a class=\"ds-text-link\" href=\"#\">How we test<span aria-hidden=\"true\">→</span></a>",
-      "css": ".ds-text-link { font-family: 'Space Grotesk', monospace; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; display: inline-flex; gap: 8px; align-items: center; color: #131410; text-decoration: none; border-bottom: 1px solid #131410; padding: 8px 0 3px; transition: color 0.25s, border-color 0.25s; } .ds-text-link:hover { color: #1D4ED8; border-color: #1D4ED8; } .ds-text-link:focus-visible { outline: 2px solid #3D78FF; outline-offset: 3px; }"
+      "css": ".ds-text-link { font-family: 'Space Grotesk', monospace; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; display: inline-flex; gap: 8px; align-items: center; color: #131410; text-decoration: none; border-bottom: 1px solid #131410; padding: 8px 0 3px; transition: color 0.25s, border-color 0.25s; } .ds-text-link:hover { color: #B0300F; border-color: #B0300F; } .ds-text-link:focus-visible { outline: 2px solid #E8492B; outline-offset: 3px; }"
     },
     {
       "name": "Catalog Row",
       "kind": "custom",
       "refersTo": "headline",
-      "description": "Signature hairline list row: blue code, headline name, mono tags, arrow. Hover inverts to ink and shifts content.",
+      "description": "Signature hairline list row: vermilion code, headline name, mono tags, arrow. Hover inverts to ink and shifts content.",
       "html": "<a class=\"ds-cap-row\" href=\"#\"><span class=\"ds-cap-idx\">S·02</span><span class=\"ds-cap-name\">Connectors &amp; carabiners</span><span class=\"ds-cap-tags\">Auto-locking · Forged alloy</span><span class=\"ds-cap-arrow\" aria-hidden=\"true\">→</span></a>",
-      "css": ".ds-cap-row { display: grid; grid-template-columns: 64px 1.3fr 1fr 32px; align-items: center; gap: 20px; padding: 24px 12px; border-top: 1px solid #13141024; border-bottom: 1px solid #13141024; text-decoration: none; color: #131410; transition: background 0.35s cubic-bezier(0.22,1,0.36,1), color 0.35s; } .ds-cap-row:hover { background: #131410; color: #F4F3EE; } .ds-cap-idx { font-family: 'Space Grotesk', monospace; font-size: 0.75rem; letter-spacing: 0.1em; color: #1D4ED8; transition: transform 0.35s, color 0.35s; } .ds-cap-row:hover .ds-cap-idx { color: #3D78FF; transform: translateX(10px); } .ds-cap-name { font-family: Archivo, sans-serif; font-variation-settings: 'wdth' 112, 'wght' 740; font-size: 1.6rem; line-height: 1.05; letter-spacing: -0.015em; text-transform: uppercase; transition: transform 0.35s; } .ds-cap-row:hover .ds-cap-name { transform: translateX(10px); } .ds-cap-tags { font-family: 'Space Grotesk', monospace; font-size: 0.8rem; color: #1314109E; transition: color 0.35s, transform 0.35s; } .ds-cap-row:hover .ds-cap-tags { color: #F4F3EE99; transform: translateX(10px); } .ds-cap-arrow { font-size: 1.3rem; justify-self: end; transition: transform 0.35s, color 0.35s; } .ds-cap-row:hover .ds-cap-arrow { transform: translateX(6px); color: #3D78FF; }"
+      "css": ".ds-cap-row { display: grid; grid-template-columns: 64px 1.3fr 1fr 32px; align-items: center; gap: 20px; padding: 24px 12px; border-top: 1px solid #13141024; border-bottom: 1px solid #13141024; text-decoration: none; color: #131410; transition: background 0.35s cubic-bezier(0.22,1,0.36,1), color 0.35s; } .ds-cap-row:hover { background: #131410; color: #F4F3EE; } .ds-cap-idx { font-family: 'Space Grotesk', monospace; font-size: 0.75rem; letter-spacing: 0.1em; color: #B0300F; transition: transform 0.35s, color 0.35s; } .ds-cap-row:hover .ds-cap-idx { color: #E8492B; transform: translateX(10px); } .ds-cap-name { font-family: Archivo, sans-serif; font-variation-settings: 'wdth' 112, 'wght' 740; font-size: 1.6rem; line-height: 1.05; letter-spacing: -0.015em; text-transform: uppercase; transition: transform 0.35s; } .ds-cap-row:hover .ds-cap-name { transform: translateX(10px); } .ds-cap-tags { font-family: 'Space Grotesk', monospace; font-size: 0.8rem; color: #1314109E; transition: color 0.35s, transform 0.35s; } .ds-cap-row:hover .ds-cap-tags { color: #F4F3EE99; transform: translateX(10px); } .ds-cap-arrow { font-size: 1.3rem; justify-self: end; transition: transform 0.35s, color 0.35s; } .ds-cap-row:hover .ds-cap-arrow { transform: translateX(6px); color: #E8492B; }"
     },
     {
       "name": "Method Card",
@@ -98,15 +175,15 @@
       "refersTo": "card-step",
       "description": "Hairline card for the three method gates; hover darkens the border and raises the porcelain.",
       "html": "<article class=\"ds-step\"><span class=\"ds-step-idx\">M·02</span><h3 class=\"ds-step-h\">Test to failure</h3><p class=\"ds-step-p\">Static pull, dynamic drop, salt spray, gate cycling. We break our own hardware daily so the field never does.</p></article>",
-      "css": ".ds-step { border: 1px solid #13141024; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #FAFAF7; max-width: 340px; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), border-color 0.35s, background 0.35s; } .ds-step:hover { transform: translateY(-4px); border-color: #131410; background: #F1F0EA; } .ds-step-idx { font-family: 'Space Grotesk', monospace; font-size: 0.75rem; letter-spacing: 0.1em; color: #1D4ED8; } .ds-step-h { font-family: Archivo, sans-serif; font-variation-settings: 'wdth' 110, 'wght' 720; font-size: 1.3rem; font-weight: normal; text-transform: uppercase; letter-spacing: -0.01em; margin: 0; color: #131410; } .ds-step-p { margin: 0; font-family: Archivo, sans-serif; font-size: 0.95rem; line-height: 1.6; color: #131410C2; }"
+      "css": ".ds-step { border: 1px solid #13141024; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 14px; background: #FAFAF7; max-width: 340px; transition: transform 0.35s cubic-bezier(0.22,1,0.36,1), border-color 0.35s, background 0.35s; } .ds-step:hover { transform: translateY(-4px); border-color: #131410; background: #F1F0EA; } .ds-step-idx { font-family: 'Space Grotesk', monospace; font-size: 0.75rem; letter-spacing: 0.1em; color: #B0300F; } .ds-step-h { font-family: Archivo, sans-serif; font-variation-settings: 'wdth' 110, 'wght' 720; font-size: 1.3rem; font-weight: normal; text-transform: uppercase; letter-spacing: -0.01em; margin: 0; color: #131410; } .ds-step-p { margin: 0; font-family: Archivo, sans-serif; font-size: 0.95rem; line-height: 1.6; color: #131410C2; }"
     },
     {
       "name": "Stat",
       "kind": "custom",
       "refersTo": "display",
-      "description": "Proof number with blue superscript and mono label.",
+      "description": "Proof number with vermilion superscript and mono label.",
       "html": "<div class=\"ds-stat\"><span class=\"ds-stat-num\">100<sup>%</sup></span><span class=\"ds-stat-label\">Batches proof-tested before shipping</span></div>",
-      "css": ".ds-stat { display: flex; flex-direction: column; gap: 10px; padding: 28px 20px; border-left: 1px solid #13141024; } .ds-stat-num { font-family: Archivo, sans-serif; font-variation-settings: 'wdth' 115, 'wght' 800; font-size: 3.6rem; line-height: 1; letter-spacing: -0.03em; color: #131410; } .ds-stat-num sup { font-size: 0.4em; color: #1D4ED8; font-variation-settings: 'wdth' 100, 'wght' 600; } .ds-stat-label { font-family: 'Space Grotesk', monospace; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: #1314109E; max-width: 18ch; }"
+      "css": ".ds-stat { display: flex; flex-direction: column; gap: 10px; padding: 28px 20px; border-left: 1px solid #13141024; } .ds-stat-num { font-family: Archivo, sans-serif; font-variation-settings: 'wdth' 115, 'wght' 800; font-size: 3.6rem; line-height: 1; letter-spacing: -0.03em; color: #131410; } .ds-stat-num sup { font-size: 0.4em; color: #B0300F; font-variation-settings: 'wdth' 100, 'wght' 600; } .ds-stat-label { font-family: 'Space Grotesk', monospace; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: #1314109E; max-width: 18ch; }"
     },
     {
       "name": "Spec Strip",
@@ -119,27 +196,47 @@
   ],
   "narrative": {
     "northStar": "The Test Certificate",
-    "overview": "Every surface behaves like a calibrated laboratory document: measured, stated, and signed off. Nothing decorates; everything attests. The porcelain page is the certificate paper, ink is the recorded data, and Stamp Blue is the certifier's mark — rare, deliberate, and always meaning 'this has been verified.' The register is brand, but the voice is a lab that happens to be beautiful: proof over adjectives, strength through restraint.",
+    "overview": "Every surface behaves like a calibrated laboratory document: measured, stated, and signed off. Nothing decorates; everything attests. The porcelain page is the certificate paper, ink is the recorded data, and Seal Vermilion is the certifier's mark — rare, deliberate, and always meaning 'this has been verified.' The register is brand, but the voice is a lab that happens to be beautiful: proof over adjectives, strength through restraint.",
     "keyCharacteristics": [
-      "Porcelain-white field with near-black ink; one blue voice used like a certifier's stamp",
+      "Porcelain-white field with near-black ink; one vermilion voice used like a certifier’s seal",
       "Wide variable grotesque (Archivo wdth 116) does the talking; serif italic interjects; mono records",
       "Depth is drawn, not cast: hairlines, tonal shifts, and one full ink inversion at the finale",
       "Motion is quiet and exponential; every animation has a reduced-motion fallback",
       "WCAG AA is a floor, not a target"
     ],
     "rules": [
-      { "name": "The Stamp Rule", "body": "Stamp Blue appears only where something is being attested — an index, a proof point, a focus, a hover. It never exceeds roughly 5% of a viewport, and #3D78FF never sets type smaller than 18px on light; small blue text is always Deep Stamp Blue.", "section": "colors" },
-      { "name": "The No-Pure Rule", "body": "Pure #000 and #FFF are forbidden. The warm ink/porcelain pair is the brand's material.", "section": "colors" },
-      { "name": "The Three-Voices Rule", "body": "Archivo states, Instrument Serif reflects, Space Grotesk records. No voice borrows another's job, and no fourth voice enters.", "section": "typography" },
-      { "name": "The Width-Not-Size Rule", "body": "Impact comes from the wdth axis and weight, never from exceeding the 6rem ceiling or tightening tracking past -0.025em.", "section": "typography" },
-      { "name": "The Flat-At-Rest Rule", "body": "No element casts a shadow at rest. State shadows stay at or under 8px blur and never attach to hairline-bordered elements — a border is a drawing, a shadow is a light source, and an element gets one or the other.", "section": "elevation" }
+      {
+        "name": "The Seal Rule",
+        "body": "Seal Vermilion appears only where something is being attested — an index, a proof point, a focus, a hover. It never exceeds roughly 5% of a viewport, and #E8492B never sets type smaller than 18px on light; small vermilion text is always Deep Seal Vermilion.",
+        "section": "colors"
+      },
+      {
+        "name": "The No-Pure Rule",
+        "body": "Pure #000 and #FFF are forbidden. The warm ink/porcelain pair is the brand's material.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three-Voices Rule",
+        "body": "Archivo states, Instrument Serif reflects, Space Grotesk records. No voice borrows another's job, and no fourth voice enters.",
+        "section": "typography"
+      },
+      {
+        "name": "The Width-Not-Size Rule",
+        "body": "Impact comes from the wdth axis and weight, never from exceeding the 6rem ceiling or tightening tracking past -0.025em.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "No element casts a shadow at rest. State shadows stay at or under 8px blur and never attach to hairline-bordered elements — a border is a drawing, a shadow is a light source, and an element gets one or the other.",
+        "section": "elevation"
+      }
     ],
     "dos": [
       "Do hold every text/background pair to WCAG AA: 4.5:1 minimum for small text (Ink Muted #1314109E is the floor), 3:1 for large display.",
       "Do draw structure with 1px hairlines and tonal porcelain shifts before reaching for any other device.",
-      "Do keep Stamp Blue scarce — if blue exceeds ~5% of a viewport, it is no longer a stamp.",
+      "Do keep Seal Vermilion scarce — if vermilion exceeds ~5% of a viewport, it is no longer a seal.",
       "Do give every animation a prefers-reduced-motion fallback and keep easing on the exponential family (cubic-bezier(0.22, 1, 0.36, 1)).",
-      "Do keep the bilingual accents (安全鏈結, 台灣・精工) — identity, not decoration."
+      "Do keep the bilingual accents (安全鏈, 台灣・精工) — identity, not decoration."
     ],
     "donts": [
       "Don't produce \"generic corporate B2B\": template heroes, stock handshake photos, blue-gradient trust badges.",

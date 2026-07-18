@@ -1,7 +1,8 @@
 /* ═══════════════════════════════════════════════════════════════
-   SAFELINK — Engineered Connection
-   Palette: porcelain white / ink / a single thread of safety orange
+   SAFECHAIN 安全鏈 — Forged link by link
+   Palette: porcelain white / ink / one seal-vermilion mark
    Type:    Archivo (variable) · Instrument Serif · Space Grotesk
+            · Noto Sans TC (subset) for 繁體中文
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
@@ -12,8 +13,8 @@
   --ink-60: rgba(19, 20, 16, 0.62);
   --line: rgba(19, 20, 16, 0.14);
   --line-soft: rgba(19, 20, 16, 0.07);
-  --accent: #3d78ff;
-  --accent-text: #1d4ed8;
+  --accent: #e8492b;
+  --accent-text: #b0300f;
   --porcelain: #f4f3ee;
 
   --font-head: "Archivo", "Noto Sans TC", sans-serif;
@@ -174,6 +175,8 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
 }
 .nav-links a:hover::after { right: 0; }
 
+.nav-side { display: flex; align-items: center; gap: 10px; }
+
 .nav-cta {
   font-family: var(--font-mono); font-size: 0.8rem;
   text-transform: uppercase; letter-spacing: 0.06em;
@@ -183,6 +186,18 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
   transition: border-color 0.3s, background 0.3s, color 0.3s;
 }
 .nav-cta:hover { background: var(--ink); color: var(--porcelain); border-color: var(--ink); }
+
+.lang-btn {
+  font-family: "Noto Sans TC", var(--font-mono), sans-serif;
+  font-size: 0.8rem; letter-spacing: 0.08em;
+  background: none; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px;
+  color: var(--ink);
+  min-width: 44px; min-height: 38px; padding: 8px 14px;
+  transition: border-color 0.3s, background 0.3s, color 0.3s;
+}
+.lang-btn:hover { border-color: var(--ink); }
+.menu-lang { margin-top: 34px; align-self: flex-start; min-height: 44px; padding: 10px 22px; }
 
 .menu-btn {
   display: none;
@@ -231,11 +246,11 @@ em { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
   overflow: hidden;
 }
 
-.hero-links {
+.hero-draw {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   color: var(--ink);
-  opacity: 0.1;
+  opacity: 0.16;
   z-index: -1;
 }
 
@@ -663,6 +678,70 @@ html.js .reveal.on { opacity: 1; transform: none; }
   .stat:nth-child(n + 2) { border-top: 1px solid var(--line); }
 
   .contact-meta { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── 繁體中文 typography ───────────────────────────────────────── */
+
+/* CJK glyphs have no width axis, no italics, and no case; when the
+   page is in Chinese, display type switches to Noto Sans TC black
+   and tracking/leading open up. Latin fragments still fall through
+   to Archivo per-glyph. */
+html[lang="zh-Hant"] body { line-height: 1.85; }
+
+html[lang="zh-Hant"] .hero-title,
+html[lang="zh-Hant"] .section-head h2,
+html[lang="zh-Hant"] .cap-name,
+html[lang="zh-Hant"] .contact-title,
+html[lang="zh-Hant"] .quote,
+html[lang="zh-Hant"] .menu-links a {
+  font-family: "Noto Sans TC", var(--font-head);
+  font-weight: 900;
+  font-variation-settings: normal;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+html[lang="zh-Hant"] .hero-title { font-size: clamp(2.3rem, 6.2vw, 4.8rem); line-height: 1.18; }
+html[lang="zh-Hant"] .contact-title { font-size: clamp(2.2rem, 5.6vw, 4.6rem); line-height: 1.2; }
+html[lang="zh-Hant"] .section-head h2 { line-height: 1.25; }
+html[lang="zh-Hant"] .cap-name { line-height: 1.3; font-size: clamp(1.3rem, 2.9vw, 2.2rem); }
+html[lang="zh-Hant"] .quote { line-height: 1.5; font-size: clamp(1.7rem, 4.4vw, 3.6rem); }
+html[lang="zh-Hant"] .manifesto-text {
+  font-family: "Noto Sans TC", var(--font-head);
+  font-weight: 500; line-height: 1.7;
+  font-variation-settings: normal;
+  font-size: clamp(1.3rem, 2.6vw, 2.2rem);
+}
+
+/* Serif italic has no Chinese form: accent phrases keep their color
+   but sit upright in Noto. */
+html[lang="zh-Hant"] em {
+  font-family: "Noto Sans TC", var(--font-serif);
+  font-style: normal;
+}
+html[lang="zh-Hant"] .hero-title em,
+html[lang="zh-Hant"] .contact-title em,
+html[lang="zh-Hant"] .quote em { color: var(--accent-text); font-size: 1em; }
+html[lang="zh-Hant"] .quote em { color: var(--accent-text); }
+html[lang="zh-Hant"] .head-note { font-family: "Noto Sans TC", sans-serif; font-size: 0.95rem; }
+html[lang="zh-Hant"] .marquee-track { font-family: "Noto Sans TC", var(--font-head); font-weight: 700; }
+html[lang="zh-Hant"] .marquee-track em { font-weight: 500; }
+html[lang="zh-Hant"] .cap-tags,
+html[lang="zh-Hant"] .stat-label,
+html[lang="zh-Hant"] .contact-meta h3,
+html[lang="zh-Hant"] .contact-meta p,
+html[lang="zh-Hant"] .hero-lede,
+html[lang="zh-Hant"] .manifesto-aside,
+html[lang="zh-Hant"] .contact-note,
+html[lang="zh-Hant"] .proof-note,
+html[lang="zh-Hant"] .step p,
+html[lang="zh-Hant"] .footer,
+html[lang="zh-Hant"] .text-link,
+html[lang="zh-Hant"] .kicker,
+html[lang="zh-Hant"] .quote-attr { font-family: "Noto Sans TC", var(--font-mono), sans-serif; }
+html[lang="zh-Hant"] .step h3 {
+  font-family: "Noto Sans TC", var(--font-head);
+  font-weight: 700; font-variation-settings: normal;
+  letter-spacing: 0.02em; text-transform: none;
 }
 
 /* ── reduced motion ───────────────────────────────────────────── */

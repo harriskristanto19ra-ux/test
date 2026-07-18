@@ -14,7 +14,7 @@ Today the site's visitors are people judging the craft: potential clients, colla
 
 ## Product Purpose
 
-A single-page brand website for SAFELINK (安全鏈結), a Taiwan-based safety connection hardware identity. Right now its job is to impress as a piece of design: a visitor should remember the page and ask who made it. It doubles as the foundation the future real business will pour genuine content into.
+A single-page brand website for SAFECHAIN (安全鏈), a Taiwan-based safety connection hardware identity. Right now its job is to impress as a piece of design: a visitor should remember the page and ask who made it. It doubles as the foundation the future real business will pour genuine content into.
 
 ## Positioning
 
@@ -22,7 +22,7 @@ Tested beyond the standard. Every section reinforces proof over adjectives: this
 
 ## Conversion & proof
 
-- Primary CTA: an email enquiry (currently the placeholder hello@safelink.example). Secondary: the "Explore systems" anchor into the catalog list.
+- Primary CTA: an email enquiry (currently the placeholder hello@safechain.example). Secondary: the "Explore systems" anchor into the catalog list.
 - The line a visitor remembers after 10 seconds: tested beyond the standard.
 - Belief ladder: (1) this company makes hardware people trust with their lives; (2) it proves that trust with testing and traceability, not adjectives; (3) it is a credible engineering partner worth contacting.
 - Proof on hand: none yet. All statistics, certifications, and claims on the page are invented placeholders; before real-world use they must be replaced with verifiable test data, certificates, and references.

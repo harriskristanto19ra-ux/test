@@ -1,5 +1,5 @@
 ---
-name: SAFELINK — Engineered Connection
+name: SAFECHAIN 安全鏈 — Forged Link by Link
 description: Porcelain-white single-page brand site where typographic precision stands in for metallurgical precision.
 colors:
   porcelain-white: "#FAFAF7"
@@ -10,8 +10,8 @@ colors:
   ink-muted: "#1314109E"
   hairline: "#13141024"
   hairline-soft: "#13141012"
-  stamp-blue: "#3D78FF"
-  deep-stamp-blue: "#1D4ED8"
+  seal-vermilion: "#E8492B"
+  deep-seal-vermilion: "#B0300F"
 typography:
   display:
     fontFamily: "Archivo, Noto Sans TC, sans-serif"
@@ -56,7 +56,7 @@ components:
     rounded: "{rounded.pill}"
     padding: "16px 28px"
   button-primary-hover:
-    backgroundColor: "{colors.deep-stamp-blue}"
+    backgroundColor: "{colors.deep-seal-vermilion}"
     textColor: "#FFFFFF"
   button-ghost:
     textColor: "{colors.ink}"
@@ -71,30 +71,32 @@ components:
     padding: "clamp(24px, 3vw, 40px)"
 ---
 
-# Design System: SAFELINK — Engineered Connection
+# Design System: SAFECHAIN 安全鏈 — Forged Link by Link
 
 ## 1. Overview
 
 **Creative North Star: "The Test Certificate"**
 
-Every surface behaves like a calibrated laboratory document: measured, stated, and signed off. Nothing decorates; everything attests. The porcelain page is the certificate paper, ink is the recorded data, and Stamp Blue is the certifier's mark — rare, deliberate, and always meaning "this has been verified." The register is brand, but the voice is a lab that happens to be beautiful: proof over adjectives, strength through restraint.
+Every surface behaves like a calibrated laboratory document: measured, stated, and signed off. Nothing decorates; everything attests. The porcelain page is the certificate paper, ink is the recorded data, and Seal Vermilion is the certifier's mark — rare, deliberate, and always meaning "this has been verified." The register is brand, but the voice is a lab that happens to be beautiful: proof over adjectives, strength through restraint.
 
 The system explicitly rejects the three worlds named in PRODUCT.md: generic corporate B2B (template heroes, stock handshake photos, blue-gradient trust badges), flashy SaaS startup (gradient glows, floating glass cards, hero metrics), and the dense industrial catalog (spec-table walls with no story). It also rejects AI-scaffold grammar: no numbered eyebrow labels above sections, no gradient text, no glassmorphism.
 
 **Key Characteristics:**
-- Porcelain-white field with near-black ink; one blue voice used like a certifier's stamp
+- Porcelain-white field with near-black ink; one vermilion voice used like a certifier's seal
 - Wide variable grotesque (Archivo wdth 116) does the talking; serif italic interjects; mono records
 - Depth is drawn, not cast: hairlines, tonal shifts, and one full ink inversion at the finale
 - Motion is quiet and exponential; every animation has a reduced-motion fallback
 - WCAG AA is a floor, not a target
+- Fully bilingual: a nav toggle swaps EN/繁體中文, retuning tracking, leading and weight for CJK
+- Imagery is drawn, not photographed: dimensioned engineering line drawings in the patent-figure tradition
 
 ## 2. Colors
 
-A near-monochrome certificate palette with a single blue attestation mark.
+A near-monochrome certificate palette with a single vermilion attestation mark — the red chop (印章) that certifies a Taiwanese document.
 
 ### Primary
-- **Stamp Blue** (#3D78FF): the certifier's mark. Catalog indices, the proof dot, marquee separators, stat superscripts, focus rings, and label headings on ink. Graphic marks and large type only — never small text on light.
-- **Deep Stamp Blue** (#1D4ED8): the only blue permitted for small text on light surfaces (6.4:1 on porcelain) and the hover fill of the primary button.
+- **Seal Vermilion** (#E8492B): the certifier's mark. Catalog indices, the proof dot, marquee separators, stat superscripts, focus rings, and label headings on ink. Graphic marks and large type only — never small text on light.
+- **Deep Seal Vermilion** (#B0300F): the only vermilion permitted for small text on light surfaces (6.1:1 on porcelain) and the hover fill of the primary button.
 
 ### Neutral
 - **Porcelain White** (#FAFAF7): the page field. Warm-tinted near-white; never pure white.
@@ -105,7 +107,7 @@ A near-monochrome certificate palette with a single blue attestation mark.
 - **Hairline** (#13141024) / **Hairline Soft** (#13141012): 1px rules and borders. Structure is drawn with these, not with shadows.
 
 ### Named Rules
-**The Stamp Rule.** Stamp Blue appears only where something is being attested — an index, a proof point, a focus, a hover. It never exceeds roughly 5% of a viewport, and #3D78FF never sets type smaller than 18px on light; small blue text is always Deep Stamp Blue.
+**The Seal Rule.** Seal Vermilion appears only where something is being attested — an index, a proof point, a focus, a hover. It never exceeds roughly 5% of a viewport, and #E8492B never sets type smaller than 18px on light; small vermilion text is always Deep Seal Vermilion.
 
 **The No-Pure Rule.** Pure #000 and #FFF are forbidden. The warm ink/porcelain pair is the brand's material.
 
@@ -126,7 +128,7 @@ A near-monochrome certificate palette with a single blue attestation mark.
 - **Label** (Space Grotesk 400–500, 0.72–0.85rem, tracking 0.05–0.18em, uppercase): micro-labels, catalog codes, the spec strip. Data voice only — never paragraphs.
 
 ### Named Rules
-**The Three-Voices Rule.** Archivo states, Instrument Serif reflects, Space Grotesk records. No voice borrows another's job, and no fourth voice enters.
+**The Three-Voices Rule.** Archivo states, Instrument Serif reflects, Space Grotesk records; in Chinese, Noto Sans TC speaks all three (900 for display, 500–700 for prose, upright with accent color where English would italicise). No voice borrows another's job.
 
 **The Width-Not-Size Rule.** Impact comes from the wdth axis and weight, never from exceeding the 6rem ceiling or tightening tracking past -0.025em.
 
@@ -147,7 +149,7 @@ Refined and restrained: gentle transitions, quiet confidence, tolerances you can
 ### Buttons
 - **Shape:** full pill (999px), mono uppercase label (0.85rem, tracking 0.06em)
 - **Primary:** ink fill, warm-porcelain text, 16px 28px padding
-- **Hover / Focus:** primary fills Deep Stamp Blue with the state-lift shadow and a -2px translate; focus is a 2px Stamp Blue outline offset 3px
+- **Hover / Focus:** primary fills Deep Seal Vermilion with the state-lift shadow and a -2px translate; focus is a 2px Seal Vermilion outline offset 3px
 - **Ghost:** hairline-free ink border, transparent fill; hovers to full ink inversion
 - **Light (on ink):** porcelain border and text; hovers to porcelain fill
 
@@ -162,7 +164,7 @@ Refined and restrained: gentle transitions, quiet confidence, tolerances you can
 - Fixed, transparent until scroll, then blurred porcelain with a hairline base. Mono uppercase links with a left-to-right underline sweep on hover. Collapses to a full-screen porcelain overlay with display-scale links under 980px; 44px minimum touch targets.
 
 ### Catalog Rows (signature)
-- Full-bleed hairline-separated list rows: Stamp Blue code (Deep Stamp Blue on light), headline-scale name, mono tag list, arrow. Hover inverts the entire row to ink and translates content 10px right — the system's boldest state change, reserved for the product catalog.
+- Full-bleed hairline-separated list rows: Seal Vermilion code (Deep Seal Vermilion on light), headline-scale name, mono tag list, arrow. Hover inverts the entire row to ink and translates content 10px right — the system's boldest state change, reserved for the product catalog.
 
 ### Spec Strip (signature)
 - The hero's bottom rule of mono microdata (EST. 2001 · ISO 9001 · 100% BATCH-TESTED) — the certificate's margin data. Reusable as a section closer.
@@ -172,9 +174,9 @@ Refined and restrained: gentle transitions, quiet confidence, tolerances you can
 ### Do:
 - **Do** hold every text/background pair to WCAG AA: 4.5:1 minimum for small text (Ink Muted #1314109E is the floor), 3:1 for large display.
 - **Do** draw structure with 1px hairlines and tonal porcelain shifts before reaching for any other device.
-- **Do** keep Stamp Blue scarce — if blue exceeds ~5% of a viewport, it is no longer a stamp.
+- **Do** keep Seal Vermilion scarce — if vermilion exceeds ~5% of a viewport, it is no longer a seal.
 - **Do** give every animation a `prefers-reduced-motion` fallback and keep easing on the exponential family (`cubic-bezier(0.22, 1, 0.36, 1)`).
-- **Do** keep the bilingual accents (安全鏈結, 台灣・精工) — identity, not decoration.
+- **Do** keep the bilingual accents (安全鏈, 台灣・精工) — identity, not decoration.
 
 ### Don't:
 - **Don't** produce "generic corporate B2B": template heroes, stock handshake photos, blue-gradient trust badges (PRODUCT.md anti-reference, verbatim).
